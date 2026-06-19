@@ -1,0 +1,261 @@
+:root {
+  --neon-orange: #ff6a00;
+  --neon-pink: #ff007f;
+  --deep-dark: #0a0a0c;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--deep-dark);
+  color: #ffffff;
+  padding-top: 76px; /* Space for fixed navbar */
+  /* ADD THESE LINES TO SET A BACKGROUND IMAGE */
+  background: linear-gradient(rgba(10, 10, 12, 0.92), rgba(10, 10, 12, 0.92)), 
+              url('Images/Kopano5.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  /* ------------------------------------------- */
+  
+  color: #ffffff;
+  padding-top: 76px; /* Space for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(10, 10, 12, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--neon-pink);
+}
+
+.navbar-brand {
+  color: var(--neon-orange) !important;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--neon-orange) !important;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(10,10,12,0.95)), 
+              url('https://images.unsplash.com/photo-1571266341486-d25aae38965f?q=80&w=1920') no-repeat center center/cover;
+  border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, var(--neon-orange), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.btn-neon-orange {
+  background: var(--neon-orange);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-neon-orange:hover {
+  background: #e65f00;
+  box-shadow: 0 0 15px var(--neon-orange);
+  color: #fff;
+}
+
+.btn-outline-neon {
+  border: 2px solid var(--neon-pink);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-outline-neon:hover {
+  background: var(--neon-pink);
+  box-shadow: 0 0 15px var(--neon-pink);
+  color: #fff;
+}
+
+/* Sections general padding */
+.section {
+  padding: 80px 0;
+  border-bottom: 1px solid #1a1a1e;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--neon-orange);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cards & Player */
+.card {
+  background: #16161a !important;
+  border: 1px solid #2a2a2e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--neon-pink);
+}
+
+.player-box {
+  background: #000;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#trackTitle {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon-orange);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Progress bar custom styling */
+.progress-container {
+  background: #333;
+  height: 8px;
+  border-radius: 4px;
+  margin: 15px 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, var(--neon-orange), var(--neon-pink));
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Events List */
+.list-group-item {
+  background: #16161a !important;
+  border: 1px solid #2a2a2e !important;
+  color: #fff !important;
+  margin-bottom: 10px;
+  border-radius: 6px !important;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.list-group-item:hover {
+  border-color: var(--neon-orange) !important;
+  transform: scale(1.01);
+}
+
+/* Gallery */
+.gallery-img {
+  border-radius: 6px;
+  border: 1px solid #333;
+  transition: 0.3s;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--neon-orange);
+  text-shadow: 0 0 10px var(--neon-orange);
+}
+
+/* Forms */
+.form-control {
+  background: #16161a;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px;
+}
+
+.form-control:focus {
+  background: #16161a;
+  color: #fff;
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 127, 0.25);
+}
+
+footer {
+  background: #000 !important;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* Changes the main title of the Qualifications section */
+#qualifications .section-title {
+  color: #ff007f; /* Change to your preferred hex code or color name */
+}
+
+/* Changes the card titles (sub-headings) */
+#qualifications .card h5 {
+  color: #00d0ff; /* Example: Cyan neon color */
+}
+#qualifications .card p {
+  color: #ffffff !important; /* Forces the text to be white */
+}
+#socials p {
+  color: #ffffff !important; /* Forces the social media paragraph to be white */
+}
+.player-box .text-muted {
+  color: #ffffff !important; /* Changes the text color to white */
+}
+#music .card-title {
+  color: #ffffff !important; /* Cyan neon color for music section card titles */
+}
