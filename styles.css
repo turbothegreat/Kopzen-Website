@@ -259,3 +259,7 @@ footer {
 #music .card-title {
   color: #ffffff !important; /* Cyan neon color for music section card titles */
 }
+::placeholder {
+  color: #ffffff !important; /* Changes placeholder text to neon pink */
+  opacity: 6; /* Ensures the color is bright and not semi-transparent */
+}
