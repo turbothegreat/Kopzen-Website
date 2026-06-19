@@ -229,22 +229,24 @@
     <div class="row justify-content-center mt-4">
       <div class="col-md-6">
 
-        <form onsubmit="event.preventDefault(); alert('Booking request sent successfully!');">
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email Address" required>
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Event Type (Wedding, Club, Bash...)" required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Message / Details" required></textarea>
-          </div>
+        <form action="https://formspree.io/f/maqzrbvb" method="POST">
+  <div class="mb-3">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+  </div>
+  <div class="mb-3">
+    <input type="text" name="event_type" class="form-control" placeholder="Event Type (Wedding, Club, Bash...)" required>
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" name="message" rows="4" placeholder="Message / Details" required></textarea>
+  </div>
 
-          <button class="btn btn-neon-orange w-100 py-3 mb-3 fw-bold fs-5 shadow-hover">Send Booking Request</button>
-        </form>
+  <input type="text" name="_gotcha" style="display:none" />
+
+  <button type="submit" class="btn btn-neon-orange w-100 py-3 mb-3 fw-bold fs-5 shadow-hover">Send Booking Request</button>
+</form>
 
         <div class="text-center mt-3">
           <a href="https://wa.me/27660373764" class="btn btn-success btn-lg px-4 rounded-pill fw-bold shadow-hover" target="_blank">
