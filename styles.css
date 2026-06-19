@@ -263,3 +263,51 @@ footer {
   color: #ffffff !important; /* Changes placeholder text to neon pink */
   opacity: 6; /* Ensures the color is bright and not semi-transparent */
 }
+/* --- CSS OPTIMIZATION & PERFORMANCE BOOSTS --- */
+
+/* Hardware acceleration fix to make animations smoother */
+.animate-pulse, .gallery-img, .card, .btn {
+  will-change: transform;
+}
+
+/* --- KEYFRAME ANIMATIONS --- */
+
+/* Subtle breathing glow effect on Hero Title */
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff007f;
+  }
+  50% {
+    text-shadow: 0 0 25px #ff6a00, 0 0 40px #ff007f;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff007f;
+  }
+}
+
+.animate-pulse {
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Hover lift effect (Hardware Accelerated) */
+.shadow-hover {
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease;
+}
+
+.shadow-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 0, 127, 0.2);
+}
+
+/* Jiggle effect on social media icons */
+@keyframes jiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.jiggle-hover:hover i {
+  animation: jiggle 0.5s ease;
+}

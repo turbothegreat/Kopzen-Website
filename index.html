@@ -13,11 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-record-vinyl fa-spin" style="animation-duration: 4s; margin-right: 8px;"></i>KHILLAH KAY`S WEBSITE</a>
 
@@ -39,8 +41,8 @@
 </nav>
 
 <header class="hero d-flex align-items-center text-center text-white">
-  <div class="container">
-    <h1 class="display-4 fw-bold">KHILLAH KAY</h1>
+  <div class="container" data-aos="fade-in" data-aos-duration="1200">
+    <h1 class="display-4 fw-bold animate-pulse">KHILLAH KAY</h1>
     <p class="lead text-uppercase fw-bold" style="color: #ff007f; letter-spacing: 2px;">Bringing the sound of the streets to the world 🔥</p>
     <div class="mt-4">
       <a href="#music" class="btn btn-neon-orange btn-lg m-2"><i class="fa-solid fa-headphones"></i> Listen Now</a>
@@ -49,7 +51,7 @@
   </div>
 </header>
 
-<section id="about" class="section text-center">
+<section id="about" class="section text-center" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title">About</h2>
     <div class="row justify-content-center">
@@ -62,28 +64,28 @@
   </div>
 </section>
 
-<section id="music" class="section">
+<section id="music" class="section" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title text-center">Latest Mixes</h2>
 
     <div class="row g-4 mt-2">
       <div class="col-md-6">
-        <div class="card h-100">
+        <div class="card h-100 shadow-hover">
           <div class="card-body">
             <h5 class="card-title mb-3"><i class="fa-solid fa-podcast" style="color: #ff6a00;"></i>100% Kelvin Momo Production Mix 2026</h5>
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-md-6">
-        <div class="card h-100">
+        <div class="card h-100 shadow-hover">
           <div class="card-body">
             <h5 class="card-title mb-3"><i class="fa-solid fa-podcast" style="color: #ff007f;"></i>Deep House Mix 2026</h5>
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@
   </div>
 </section>
 
-<section class="section text-center" style="background-color: #0d0d11;">
+<section class="section text-center" style="background-color: #0d0d11;" data-aos="fade-up">
   <div class="container">
 
     <h2 class="section-title">🎧 Live DJ Player</h2>
@@ -101,7 +103,7 @@
       <p id="trackTitle" class="mb-2">100% Kelvin Momo Mix by Khillah Kay Mix 2026</p>
       <p class="text-muted small mb-0">100% Music Production Mix</p>
 
-      <audio id="djAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+      <audio id="djAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="metadata"></audio>
 
       <div class="progress-container" onclick="seekTrack(event)">
         <div id="progressBar" class="progress-bar-fill"></div>
@@ -128,7 +130,7 @@
   </div>
 </section>
 
-<section id="events" class="section">
+<section id="events" class="section" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title text-center">Upcoming Events</h2>
 
@@ -153,47 +155,47 @@
   </div>
 </section>
 
-<section id="gallery" class="section bg-black text-white">
+<section id="gallery" class="section bg-black text-white" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title text-center">Gallery</h2>
 
     <div class="row g-4 mt-2">
       <div class="col-6 col-md-4">
-        <img src="Images/Kopano1.jpeg" class="gallery-img img-fluid" alt="DJ Gig">
+        <img src="Images/Kopano1.jpeg" class="gallery-img img-fluid" alt="DJ Gig" loading="lazy">
       </div>
       <div class="col-6 col-md-4">
-        <img src="Images/Kopano2.jpeg" class="gallery-img img-fluid" alt="DJ Decks">
+        <img src="Images/Kopano2.jpeg" class="gallery-img img-fluid" alt="DJ Decks" loading="lazy">
       </div>
       <div class="col-6 col-md-4">
-        <img src="Images/Kopano6.jpeg" class="gallery-img img-fluid" alt="Crowd Vibe">
+        <img src="Images/Kopano6.jpeg" class="gallery-img img-fluid" alt="Crowd Vibe" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section id="socials" class="section text-center" style="background-color: #0d0d11;">
+<section id="socials" class="section text-center" style="background-color: #0d0d11;" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title">🌐 Find Him Online</h2>
     <p class="lead text-muted">Follow KHILLAH KAY on all platforms for immediate updates & drops</p>
 
     <div class="social-icons mt-5">
-      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://soundcloud.com/" target="_blank"><i class="fab fa-soundcloud"></i></a>
-      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank" class="jiggle-hover"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/" target="_blank" class="jiggle-hover"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com/" target="_blank" class="jiggle-hover"><i class="fab fa-youtube"></i></a>
+      <a href="https://soundcloud.com/" target="_blank" class="jiggle-hover"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://facebook.com/" target="_blank" class="jiggle-hover"><i class="fab fa-facebook"></i></a>
     </div>
   </div>
 </section>
 
-<section id="qualifications" class="section bg-black">
+<section id="qualifications" class="section bg-black" data-aos="fade-up">
   <div class="container">
 
     <h2 class="section-title text-center">🎓 Qualifications & Experience</h2>
 
     <div class="row mt-5 g-4">
       <div class="col-md-4">
-        <div class="card p-4 h-100 text-center border-top border-5 border-warning">
+        <div class="card p-4 h-100 text-center border-top border-5 border-warning shadow-hover">
           <div class="fs-1 mb-3"><i class="fa-solid fa-certificate" style="color: var(--neon-orange);"></i></div>
           <h5 class="fw-bold">QUALIFIED DJ WITH CERTIFICATION</h5>
           <p class="text-muted mt-2">Certified professional DJ in beat matching, blending & live performance execution.</p>
@@ -201,7 +203,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-4 h-100 text-center border-top border-5 border-info">
+        <div class="card p-4 h-100 text-center border-top border-5 border-info shadow-hover">
           <div class="fs-1 mb-3"><i class="fa-solid fa-volume-high" style="color: var(--neon-pink);"></i></div>
           <h5 class="fw-bold">Sound Engineer</h5>
           <p class="text-muted mt-2">Deep knowledge of sound balancing, frequency EQ, and tricky live club setups.</p>
@@ -209,7 +211,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-4 h-100 text-center border-top border-5 border-success">
+        <div class="card p-4 h-100 text-center border-top border-5 border-success shadow-hover">
           <div class="fs-1 mb-3"><i class="fa-solid fa-champagne-glasses" style="color: var(--neon-orange);"></i></div>
           <h5 class="fw-bold">Performance Experience</h5>
           <p class="text-muted mt-2">Rocked local events, high-end private parties, wedding functions, and massive campus gigs.</p>
@@ -220,7 +222,7 @@
   </div>
 </section>
 
-<section id="contact" class="section" style="background-color: #0d0d11;">
+<section id="contact" class="section" style="background-color: #0d0d11;" data-aos="fade-up">
   <div class="container">
     <h2 class="section-title text-center">Book ME!</h2>
 
@@ -241,11 +243,11 @@
             <textarea class="form-control" rows="4" placeholder="Message / Details" required></textarea>
           </div>
 
-          <button class="btn btn-neon-orange w-100 py-3 mb-3 fw-bold fs-5">Send Booking Request</button>
+          <button class="btn btn-neon-orange w-100 py-3 mb-3 fw-bold fs-5 shadow-hover">Send Booking Request</button>
         </form>
 
         <div class="text-center mt-3">
-          <a href="https://wa.me/27660373764" class="btn btn-success btn-lg px-4 rounded-pill fw-bold" target="_blank">
+          <a href="https://wa.me/27660373764" class="btn btn-success btn-lg px-4 rounded-pill fw-bold shadow-hover" target="_blank">
             <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp Booking
           </a>
         </div>
@@ -259,8 +261,17 @@
   <p class="mb-0">© 2026 KHILLAH KAY. All rights reserved.</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  // Initialize AOS Library
+  AOS.init({
+    once: true, // Animation happens only once when scrolling down
+    easing: 'ease-in-out',
+    duration: 800
+  });
+</script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
